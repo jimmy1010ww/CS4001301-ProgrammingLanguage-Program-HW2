@@ -1,10 +1,10 @@
-(define (palindrome list1)
-  (append list1 (reverse list1)))
+;Made by B10915003
+;function name: palindrome
+;	input: 1 list, input_list
+;	output: input_list + reverse of input_list
 
-(define (reverse list1)
-  (cond (
-    (= 1 (length list1)) list1)
-    (else (append (reverse (cdr list1)) (list (car list1))))))
-
-(print (palindrome '(1 2 3)))
-(print (palindrome '(a b c)))
+(define (palindrome input_list)
+  (append input_list (reverse input_list)))
+          
+(print (palindrome '(a a b b c)))
+(print (palindrome '(12 1 12)))

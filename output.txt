@@ -1,0 +1,15 @@
+#pa2scheme1.com 
+
+(palindrome '(a a b b c))
+=> (a a b b c c b b a a)
+
+(palindrome '(12 1 12))
+=> (12 1 12 12 1 12)
+
+#pa2scheme2.com 
+
+(dbl_atm 'x '(x (y z (x y)))
+(x x (y z (x x y)))
+
+(dbl_atm 'y '(x (y z (x y)))
+(x (y y z (x y y)))
